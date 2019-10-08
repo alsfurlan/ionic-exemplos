@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  private nome: string;
+  
+  constructor() {
+    this.nome = '';
+  }
 
 }
