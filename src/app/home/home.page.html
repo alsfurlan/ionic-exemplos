@@ -10,8 +10,39 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-input type="text" clearInput placeholder="Digite o seu nome" [(ngModel)]="nome"></ion-input>
-  <p *ngIf="nome">Olá mundo, {{nome}}!</p>
+  <h2>Padrão</h2>
+  <ion-button>Botão</ion-button>
+
+  <h2>Cores</h2>
+  <p>
+    <ion-button color="primary">Botão</ion-button>
+    <ion-button color="secondary">Botão</ion-button>
+    <ion-button color="tertiary">Botão</ion-button>
+    <ion-button color="success">Botão</ion-button>
+    <ion-button color="warning">Botão</ion-button>
+    <ion-button color="danger">Botão</ion-button>
+    <ion-button color="light">Botão</ion-button>
+    <ion-button color="medium">Botão</ion-button>
+    <ion-button color="dark">Botão</ion-button>
+  </p>
+
+  <h2>Tamanho</h2>
+  <ion-button size="small">Botão</ion-button>
+  <ion-button size="default" color="success">Botão</ion-button>
+  <ion-button size="large" color="danger">Botão</ion-button>
+
+  <h2>Expansão</h2>
+  <ion-button expand="block" color="">Botão</ion-button>
+  <ion-button expand="full">Botão</ion-button>
+
+  <h2>Preenchimento</h2>
+  <ion-button fill="clear">Botão</ion-button>
+  <ion-button fill="outline">Botão</ion-button>
+  <ion-button fill="solid">Botão</ion-button>
+
+  <h2>Forma</h2>
+  <ion-button shape="round">Botão</ion-button>
+
 </ion-content>
 
 <ion-footer>
