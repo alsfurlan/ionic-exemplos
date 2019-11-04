@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoadingController } from '@ionic/angular';
+import { LoadingController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,8 @@ import { LoadingController } from '@ionic/angular';
 export class HomePage {
   
   constructor(
-    private loadingController : LoadingController
+    private loadingController : LoadingController,
+    private toastController : ToastController
   ) {}
 
   showLoading() {
@@ -22,6 +23,19 @@ export class HomePage {
         loading.present();
         setTimeout(() => loading.dismiss(), 5000);
       });
+  }
+
+  showToast() {
+    this.toastController
+      .create({
+        message: 'Minha primeira notificação!',
+        duration: 5000,
+        color: "dark",
+        showCloseButton: true,
+        closeButtonText: 'X',
+        position: 'middle'
+      })
+      .then(toast => toast.present());
   }
 
 }
