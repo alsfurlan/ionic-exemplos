@@ -34,7 +34,7 @@ export class HomePage {
         color: "dark",
         showCloseButton: true,
         closeButtonText: 'X',
-        position: 'middle'
+        position: 'bottom'
       })
       .then(toast => toast.present());
   }
